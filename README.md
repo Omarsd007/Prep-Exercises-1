@@ -2,7 +2,7 @@
 This repository includes the Solutions of  Prep-Exercises  of HYF program
 
 
-##WEEK 2
+## WEEK 2
 # Which way of representing the traffic light did you find better? Why?
 
 I think the second one since it is more readable. 
