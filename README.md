@@ -15,3 +15,4 @@ If the values of cycle or rotation were greater than condition then do while loo
 
 
 3. We could have also used a for loop to make the traffic light do 2 full rotations. Do you think that would be better? Why or why not?
+No,I don't think so . We can use both while and for loop . They do the same work .
