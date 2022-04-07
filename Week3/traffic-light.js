@@ -5,19 +5,19 @@
  * functions, as and when needed.
  */
 
-function getCurrentState(trafficLight,possibleStates,stateIndex) {
-    return trafficLight.possibleStates[stateIndex];
+function getCurrentState(trafficLight) {
+    return  trafficLight.possibleStates[trafficLight.stateIndex];
 
 }
-function getNextStateIndex(stateindex) {
+function getNextStateIndex(trafficLight) {
  
-  if (stateindex==2){
-      stateindex=0;
+  if (trafficLight.stateIndex==2){
+      trafficLight.stateIndex=0;
   } 
   else {
-      stateindex++;
+    trafficLight.stateIndex++;
   }
-return stateindex;
+return trafficLight.stateIndex;
   // TODO
   // Return the index of the next state of the `trafficLight` such that:
   // - if the color is green, it will turn to orange
@@ -44,11 +44,11 @@ function main() {
   };
 
   for (let cycle = 0; cycle < 6; cycle++) {
-    const currentState = getCurrentState(trafficLight,trafficLight.possibleStates,trafficLight.stateIndex);
+    const currentState = getCurrentState(trafficLight);
     console.log(cycle, "The traffic light is now", currentState);
 
     waitSync(1); // Wait a second before going to the next state
-    trafficLight.stateIndex = getNextStateIndex(trafficLight.stateIndex);
+    trafficLight.stateIndex = getNextStateIndex(trafficLight);
   }
 }
 
