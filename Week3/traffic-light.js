@@ -1,9 +1,3 @@
-"use strict";
-/**
- * The `trafficLight` object is now no longer a global variable. Instead,
- * it is defined in function `main()` and passed as a parameter to other
- * functions, as and when needed.
- */
 
 function getCurrentState(trafficLight) {
     return  trafficLight.possibleStates[trafficLight.stateIndex];
@@ -18,21 +12,10 @@ function getNextStateIndex(trafficLight) {
     trafficLight.stateIndex++;
   }
 return trafficLight.stateIndex;
-  // TODO
-  // Return the index of the next state of the `trafficLight` such that:
-  // - if the color is green, it will turn to orange
-  // - if the color is orange, it will turn to red
-  // - if the color is red, it will turn to green
 }
-
-// This function loops for the number of seconds specified by the `secs`
-// parameter and then returns.
-// IMPORTANT: This is not the recommended way to implement 'waiting' in
-// JavaScript. You will learn better ways of doing this when you learn about
-// asynchronous code.
 function waitSync(secs) {
   const start = Date.now();
-  while (Date.now() - start < secs * 1000) {
+  while (Date.now - start < secs * 1000) {
     // nothing do to here
   }
 }
@@ -53,12 +36,11 @@ function main() {
 }
 
 main();
-/**
- * The output should be:
-0 The traffic light is now green
-1 The traffic light is now orange
-2 The traffic light is now red
-3 The traffic light is now green
-4 The traffic light is now orange
-5 The traffic light is now red
-*/
+
+//* here is the output
+0The traffic light is nowgreen
+1The traffic light is noworange
+2The traffic light is nowred
+3The traffic light is nowgreen
+4The traffic light is noworange
+5The traffic light is nowred
